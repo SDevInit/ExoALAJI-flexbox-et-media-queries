@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header */
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/*centerTool */
+.centerTool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navigation */
+.navigation {
+    flex: 1; 
+    text-align: left;
+    background-color: chartreuse;
+}
+
+/*logo */
+.logo {
+    flex: 1;
+    text-align: center;
+    background-color: aqua;
+}
+
+/*r sociaux */
+.socials {
+    flex: 1;
+    text-align: right;
+    background-color: #ff0000;
+}
+
+/* Styles info */
+.info {
+    font-size: 16px;
+    color: #333;
+}
+
+/*slider */
+.slider {
+    width: 100%;
+    height: 420px;
+    
+}
+
+/* footer */
+footer {
+    background-color: darkorange;
+    padding: 18px;
+}
+
+/* Styles des articles */
+.articlesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+
+/* Styles articles */
+.articles {
+    width: calc(33.33%); 
+
+    height: 230px; 
+    background-color: #ffffff; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+}
+
+/* Couleurs article */
+.articles:nth-child(1) {
+    background-color: #FFD700; 
+}
+
+.articles:nth-child(2) {
+    background-color: #000000;
+}
+
+.articles:nth-child(3) {
+    background-color: #FFD700; 
+}
+
+.articles:nth-child(4) {
+    background-color: #000000;
+}
+
+.articles:nth-child(5) {
+    background-color: #FFD700; 
+}
+
+.articles:nth-child(6) {
+    background-color: #000000;
+}
+
+
+@media (max-width: 1200px) {
+    .articles {
+        width: calc(50%);
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    .navigation {
+        flex: none; 
+        width: 80%; 
+        text-align: center; 
+    }
+
+    .logo {
+        flex : none;
+        width: 20%;
+    }
+
+    .socials {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .articles {
+        width: calc(100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .headerFlex {
+        flex-direction: column;
+        justify-content: center;
+        height: auto; 
+    }
+
+    .navigation, .logo, .socials {
+        flex: none; 
+        width: 100%; 
+        text-align: center;
+        display: flex;
+    }
+}
